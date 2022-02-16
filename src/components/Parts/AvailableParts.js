@@ -13,6 +13,7 @@ export default function AvailableParts() {
   const partsList = DUMMY_DATA.map((part) => {
     return (
       <PartItem
+        id={part.id}
         key={part.id}
         name={part.name}
         description={part.description}

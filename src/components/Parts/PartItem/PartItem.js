@@ -1,4 +1,5 @@
 import classes from "./PartItem.module.css";
+import PartItemForm from "./PartItemForm";
 
 export default function PartItem(props) {
   const price = `$${props.price.toFixed(2)}`;
@@ -10,7 +11,9 @@ export default function PartItem(props) {
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
-      <div></div>
+      <div>
+        <PartItemForm id={props.id} />
+      </div>
     </li>
   );
 }
