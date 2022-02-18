@@ -4,7 +4,7 @@ import classes from "./HeaderPartButton.module.css";
 
 export default function HeaderPartButton(props) {
   return (
-    <button className={classes.button}>
+    <button className={classes.button} onClick={props.onClick}>
       <span className={classes.icon}>
         <CartIcon />
       </span>
